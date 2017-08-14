@@ -32,7 +32,6 @@ def getDir():
     window.withdraw() #hide Main window
 
     filePath = filedialog.askopenfilename() #open file dialog
-    #fileFolder = filedialog.askdirectory()
     tbFilePath.insert(0, filePath)
     window.deiconify() #show main window
 
@@ -60,8 +59,6 @@ lblVM = ttk.Label(window, text="VM:")
 cboVms = ttk.Combobox(window, value=getVms())
 lblPath = ttk.Label(window, text="File:")
 tbFilePath = ttk.Entry(window)
-intFolder = tkinter.IntVar()
-rbFolder = ttk.Checkbutton(window, text="Folder", variable=intFolder)
 btnFilePath = ttk.Button(window, text="Select", command=getDir)
 btnCopy = ttk.Button(window, text="Copy", command=Copy)
 
@@ -69,7 +66,6 @@ lblVM.pack(side=tkinter.LEFT)
 cboVms.pack(side=tkinter.LEFT)
 lblPath.pack(side=tkinter.LEFT)
 tbFilePath.pack(side=tkinter.LEFT)
-rbFolder.pack(side=tkinter.LEFT)
 btnFilePath.pack(side=tkinter.LEFT) 
 btnCopy.pack(side=tkinter.BOTTOM)
 window.mainloop()
