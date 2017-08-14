@@ -4,6 +4,6 @@ This is just a small python tool, that can helps, if you arent familiar with Pow
 Combobox for choosing the VM, where you want to copy to.
 Textbox should display the path of file or folder, if you have selected one.
 Checkbox for activate the folder mode. If you check you can copy a folder.(Not Recursive)
-Select Button for choose a folder.
+Select Button for choose a folder. With the Copy button you start the copy routine!
  
 
